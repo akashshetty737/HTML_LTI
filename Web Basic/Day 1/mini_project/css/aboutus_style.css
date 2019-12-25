@@ -1,8 +1,28 @@
 body{
     font-family: 'Trebuchet MS';
     background-color: honeydew;
+    align-self: center;
 }
-div img{
-    width: auto;
-    height: 260px;
+h1{
+    text-align: center;
+    color: darkblue;
+}
+
+div{
+    display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+div section{
+    color: orangered;
+    text-align: center;
+    float: left;
+    padding-left: 1%;
+    
+}
+
+div section img{
+    
+    height: 245px;
 }
