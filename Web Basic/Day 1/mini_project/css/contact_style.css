@@ -1,0 +1,23 @@
+body{
+    font-family: 'Trebuchet MS';
+    background-color: honeydew;
+}
+
+p{
+    display: inline;
+}
+.left{
+    text-align: left;
+    float: left;
+    
+}
+
+.right{
+    text-align: right;
+    float: right;
+}
+
+b{
+   color: darkblue;
+   font-size: 25px;
+}
