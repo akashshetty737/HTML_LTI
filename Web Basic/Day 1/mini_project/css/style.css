@@ -1,5 +1,6 @@
 body{
-    background-image: url('/images/ripple.jpeg');
+    background-image: url('images/background_simple_circle.jpg');
+    background-position: center;
     background-size: cover;
     background-color: lavender;
     font-family: 'Trebuchet MS';
@@ -23,7 +24,7 @@ body{
 
 .header ul li a{
     text-decoration: none;
-    background-color: royalblue;
+    background-color: indigo;
     color: seashell;
     padding: 15px 15px 15px 15px;
     border-radius: 5px;
@@ -33,6 +34,7 @@ body{
 
 .header ul li a:hover{
      opacity:1;
+     transition: ease 1s;
 }
 
 .navbar{
@@ -43,11 +45,13 @@ body{
 }
 
 .navbar ul li {
-     display:inline;
+     display:block;
+     
 }
 
 .navbar ul li a {
      text-decoration: none;
+     color: aliceblue;
 }
 
 .content{
@@ -61,16 +65,18 @@ body{
 .content iframe{
     height: 100%;
     width: 100%;
+   
+    
 }
 
 .footer{
-  /*  background-color: cornflowerblue; */
-    
-    
+  height:  5vh;
+  color: black;
+   
 }
 
 h1{
-    color: royalblue;
+    color: burlywood;
     font-size: 2.5em;
     margin-top: 0px;
 }

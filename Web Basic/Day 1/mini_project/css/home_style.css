@@ -1,5 +1,8 @@
 body{
     font-family: 'Trebuchet MS';
-    text-align: center;
+    background-color: honeydew;
+}
 
+div, img {
+    text-align: center;
 }
