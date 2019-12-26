@@ -1,4 +1,4 @@
-body{
+ body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,5 +11,12 @@ table{
 .centerBold{
     text-align: center;
     font-weight: bold;
+
+}
+
+.noBorderError{
+    border: none;
+    font-family: 'Trebuchet MS';
+    color: red;
 
 }

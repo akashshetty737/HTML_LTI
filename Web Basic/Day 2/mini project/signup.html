@@ -12,14 +12,16 @@
 
 <body>
     <table border="1px">
-        <form>
+        <form id="frm">
             <tr>
                 <td class="centerBold"><label> Name </label></td>
-                <td><input type="text"></td>
+                <td><input type="text" id="name"></td>
+                <td id="name-error" class="noBorderError"> </td>
             </tr>
             <tr>
                 <td class="centerBold"><label> Employee Code </label></td>
-                <td><input type="text"></td>
+                <td><input type="text" id="employeeCode" ></td>
+                <td id="ec-error" class="noBorderError"> </td>
             </tr>
             <tr>
                 <td class="centerBold"><label>Department </label></td>
@@ -28,12 +30,14 @@
                     <input type="radio" name="dept">Technical<br>
                     <input type="radio" name="dept">Accounts<br>
                 </td>
+                <td id="dept-error" class="noBorderError"></td>
 
             </tr>
             <tr>
                 <td class="centerBold"><label> Date of Joining </label></td>
                 <td>
                     <select id="day">
+                        <option>day</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -67,8 +71,9 @@
                         <option>31</option>
                     </select>
                     <select id="month">
+                        <option>month</option>
                         <option>January</option>
-                        <option>Feburary</option>
+                        <option>February</option>
                         <option>March</option>
                         <option>April</option>
                         <option>May</option>
@@ -81,6 +86,7 @@
                         <option>December</option>
                     </select>
                     <select id="year">
+                        <option>year</option>   
                         <option>2010</option>
                         <option>2011</option>
                         <option>2012</option>
@@ -91,36 +97,37 @@
                         <option>2017</option>
                         <option>2018</option>
                         <option>2019</option>
-                    </select><br>
-                    dd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yyyy
-                  
-
+                    </select>
                 </td>
+                <td id="date-error" class="noBorderError"></td>
             </tr>
             <tr>
                 <td class="centerBold"><label> Address </label></td>
-                <td><textarea rows="5" cols="20"></textarea></td>
+                <td><textarea rows="5" cols="20" id="address"></textarea></td>
+                <td id="address-error" class="noBorderError"></td>
             </tr>
             <tr>
                 <td class="centerBold"><label> Training Program Attended </label></td>
                 <td>
-                    <input type="checkbox">HTML/DHTML<br>
-                    <input type="checkbox">Java<br>
-                    <input type="checkbox">Client/Server<br>
-                    <input type="checkbox">.NET<br>
+                    <input type="checkbox" name="trainingPA">HTML/DHTML<br>
+                    <input type="checkbox" name="trainingPA">Java<br>
+                    <input type="checkbox" name="trainingPA">Client/Server<br>
+                    <input type="checkbox" name="trainingPA">.NET<br>
 
                 </td>
             </tr>
             <tr>
                 <td class="centerBold"><label> Training Program need to attend </label></td>
                 <td>
-                    <select id="trainingleft">
+                    <select id="trainingLeft">
+                        <option>select</option>
                         <option>JavaScript</option>
                         <option>Python</option>
                         <option>AI</option>
                         <option>Robotics</option>
                     </select>
                 </td>
+                <td id = "trainingl-error" class="noBorderError"></td>
             </tr>
             <tr>
                 <td class="centerBold"><label> Send the information at </label></td>
@@ -128,7 +135,7 @@
             </tr>
             <tr>
                 
-                <td colspan="2" class="centerBold"><input type="button" value="Submit"></td>
+                <td colspan="2" class="centerBold"><input type="button" value="Submit" onclick="validate()"></td>
             </tr>
 
         </form>
