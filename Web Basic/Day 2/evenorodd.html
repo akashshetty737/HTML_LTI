@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px; 
+            height: 350px;
+            background-color: aqua;
+            margin-top: 100px;
+        }
+    
+    </style>
+    <script>
+    function evenOrOdd(){
+        var number = document.getElementById("inputNumber").value;
+        var result = " ";
+        if(number % 2 == 0){
+            result = "Number is Even";
+        }
+        else{
+            result = "Number is Odd";
+        }
+        document.getElementById("resultSet").innerHTML = result;
+    }
+    
+    </script>
+</head>
+<body>
+    <form >
+        <label > Enter a Number: </label>
+        <input type="text"  id="inputNumber">
+        <input type="button" value="Submit" onclick="evenOrOdd()">
+    </form>
+    <div id="resultSet">
+        
+    </div>
+</body>
+</html>

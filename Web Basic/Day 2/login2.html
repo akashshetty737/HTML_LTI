@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form</title>
+    <script src="login2.js"></script>
+    <style>
+        #container {
+            background-color: aqua;
+            width: 500px;
+            height: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            /* padding-top: 5%;
+            text-align: center; */
+        }
+
+        .font {
+            font-family: 'Trebuchet MS';
+            font-size: 18px;
+            font-weight: bold;
+            color: blue;
+            
+        }
+
+
+        .aacha {
+            padding: 1%;
+        }
+
+        .error{
+            font-family: Verdana;
+            color: red;
+        }
+
+        [type]{
+            border:  solid 2px red;
+            
+        }
+        [type="button"]{
+            background-color: blue;
+            color: white;
+            padding: 10px 25px;
+        }
+
+        .big{
+            font-size: 35px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form id="frm" action="positivenegative.html" method="GET">
+            <table>
+                <tr colspan="3" class="font big" >
+                   <th>Login Form</th> 
+                </tr>
+                <tr>
+                    <td><label class="font"> Enter Username</label></td>
+                    <td> <input type="text" id="username" class="aacha"></td>
+                    <td id="user-error" class="error"> </td>
+                </tr>
+                <tr>
+                    <td><label class="font">Enter Password</label></td>
+                    <td><input type="password" id="password" class="aacha"></td>
+                    <td id="pass-error" class="error"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="button" value="Login" onclick="validateForm()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

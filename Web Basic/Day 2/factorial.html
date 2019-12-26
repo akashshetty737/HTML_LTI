@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            font-family: Verdana;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            text-align: center;
+            margin: 10%;
+            color: burlywood;
+            font-family: 'Trebuchet MS';
+            width: 500px; 
+            height: 350px;
+            background-color: darkblue;
+            margin-top: 100px;
+            
+        }
+
+        marquee{
+            display: block;
+        }
+
+    
+    </style>
+    <script>
+        function factorial(){
+            var number = document.getElementById("checkFactorial").value;
+            var result = "";
+            var fact = 1;
+            for(var i=1; i<=number; i++)
+            {                   
+                fact = fact * i;
+            }
+            result = "The factorial of "+number+" is "+fact;
+
+            document.getElementById("resultSet").innerHTML = result;
+        }
+    </script>
+
+    <title>Factorial</title>
+</head>
+<body>
+    <form >
+        <label> Enter a number to check factorial : </label>
+        <input type="text" id="checkFactorial">
+        <input type="button" value="Submit" onclick= "factorial()">
+    </form>
+
+    <div id="resultSet"> 
+
+    </div>
+  
+    <marquee>
+    <img src="/Day 1/Image/tenor.gif" alt="christmas">
+    </marquee>
+</body>
+</html>

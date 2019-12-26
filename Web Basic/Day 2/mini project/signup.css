@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    background-color: deepskyblue;
+}
+
+.centerBold{
+    text-align: center;
+    font-weight: bold;
+
+}

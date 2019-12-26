@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sum Of Digits</title>
+    <style>
+        div {
+            width: 500px;
+            height: 350px;
+            background-color: aqua;
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        function sumOfDigits(){
+            var number = document.getElementById("textNumber").value;
+            sum = 0;
+            var result=" ";
+            while(number>0)
+            {
+                var rem = number % 10;
+                sum = rem + sum;
+                number = Math.floor(number / 10);
+            }
+            document.getElementById("resultSet").innerHTML="The sum is "+sum;
+        }
+    </script>
+
+    
+</head>
+<body>
+    <form>
+        <label>Enter the number : </label>
+        <input type="text" id="textNumber">
+        <input type="button" value="Submit" onclick="sumOfDigits()">
+    </form>
+    <div id="resultSet">
+
+    </div>
+</body>
+</html>
