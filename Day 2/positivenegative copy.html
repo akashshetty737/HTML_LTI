@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positive and Negative</title>
+    <style>
+        div{
+            width: 500px; 
+            height: 350px;
+            background-color: aqua;
+            margin-top: 100px;
+        }
+    
+    </style>
+    <script>
+        function checkNumber() {
+            
+            var number = document.getElementById("textNumber").value;
+            var resultStr = " ";
+            if(number > 0){
+                resultStr = "Number "+number+ " is positive";
+            }
+            else{
+               resultStr = "Number "+number+ " is negative";
+            }
+
+            document.getElementById("result").innerHTML = resultStr;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label>Enter Number</label>
+        <input type="text" id="textNumber" placeholder="Enter Number">
+        <input type="button" value="Check Number" onclick="checkNumber()">
+    </form>
+    <div id="result">
+        Result will go here.
+    </div>
+</body>
+
+</html>

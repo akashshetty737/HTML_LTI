@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fibonacci</title>
+    <style>
+      div{
+            width: 500px; 
+            height: 350px;
+            background-color: aqua;
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        function fibonnacci(){
+        var number = document.getElementById("textNumber").value;
+        
+        var number0 = 0; 
+        var number1 = 1;
+        var sum;
+        var result = "Fibonnacci series is :"
+        
+        for(var i=0; i<=number; i++)
+        {        
+            result = result+" "+ number0;
+            sum = number0 + number1;
+            number0 = number1;
+            number1 = sum;
+           
+        }
+        document.getElementById("resultSet").innerHTML = result;
+    }
+
+    </script>
+
+</head>
+<body>
+    <form>
+        <label> Enter a number</label>
+        <input type="text" id="textNumber">
+        <input type="button" value="Fibonnacci" onclick="fibonnacci()">
+    </form>
+    <div id="resultSet">
+        
+    </div>
+</body>
+</html>

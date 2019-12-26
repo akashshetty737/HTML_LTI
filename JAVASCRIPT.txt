@@ -1,0 +1,124 @@
+Js is scripting language which is as good as programming language, 
+it includes all the loops along with all programming contructs.
+var is a keyword whioch is used to declare variable in javascript.
+java is statically typed language.
+javascript is dynamically typed language.
+javascript is case sensitive language.
+it is not necessary to specify the datatype of the variable during declaration.
+ex: var x;
+now var can store any kind of datatype. thats why js is dynamically typed language.{in java we cant do this.}
+
+purpose :
+It does client side validation.
+it doenst verify data in the server but it validates the input data 
+It restricts the null/invalid request to reach the server.
+it checks whether the input charachteristics are correct or not.
+js file has no weigtage without html.
+js is executed on the browser.
+F12 is used to open the inspect/devConsol in the browser.
+
+// alert("Welcome to JavaScript") {message popup box}
+ console.log("Welcome to javaScript") {printing on the console of browser, same as printf} 
+//
+
+THERE ARE 5 TYPES OF VARIABLES IN JS.
+1. NUMBER
+2. STRING
+3. BOOLEAN
+4. OBJECT
+5. UNDEFINED
+
+//
+typeof(x)
+: number
+//
+
+#Defining an object in JS
+x = {};
+
+now x has a datatype as Object.
+
+
+2 ways to include a js in html document
+
+1. using <script> tag : 
+2.
+
+Declaring function:
+Function fun_name()
+{
+}
+\
+
+
+how to retrieve value from input textbox in html
+document represents entire document of html
+document object takes entire document and using .getElementById allows us to identify
+ which textbox to take value from on basis of id and .value will return the value. 
+ var number = document.getElementById("textNumber").value;
+
+
+
+.innerHTML property (not a function) is used along side with .getElementId to write into the HTML page.
+
+
+only use inline if you are overriding only 1 or 2 attributes.
+
+
+
+
+
+
+
+
+
+
+
+Question
+
+1. Even or Odd Numbers
+2. Calculate factorial 
+3. fibonnacci series
+4. if number is positive then calculate sum upto that no. i.e. if 5 is given do 1+2+3+4+5
+5. Designs: if input is 4
+a.	****
+	****
+	****
+	****
+
+b.	*
+	**
+	***
+	****
+c.	   *
+	  **
+	 ***
+	****
+d.	 *
+	***
+       *****
+      *******
+6. if input is 1234 o/p 1+2+3+4  
+7. prime numbers from 1 to input.
+
+
+
+
+
+class is the attribute of any tag that is used to specify the CSS.
+id is used to uniquely identify a element.
+
+
+id selector #
+class selector .
+element selector tag name
+
+
+In form using action attribute we can specify the page we can call from the server.
+method attribute default is get.
+
+extension of javascript file should be .js
+
+to link javascript external file we use <script> tag with its src property
+
+<script src="example.js"></script>

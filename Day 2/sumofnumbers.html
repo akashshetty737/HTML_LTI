@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sum of Numbers</title>
+    <style>
+        div {
+            width: 500px;
+            height: 350px;
+            background-color: aqua;
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        function sumCalculate() {
+            var number = document.getElementById("textNumber").value;
+            if (number > 0) {
+                var sum = 0;
+                for (var i = 1; i <= number; i++) {
+                    sum = sum + i;
+                }
+                document.getElementById("resultSet").innerHTML = sum;
+
+            }
+            else {
+                document.getElementById("resultSet").innerHTML = "Enter a positive Number";
+            }
+
+        }
+        
+    </script>
+</head>
+
+<body>
+    <form>
+        <label>Enter the number</label>
+        <input type="text " id="textNumber">
+        <input type="button" value="Calculate" onclick="sumCalculate()">
+    </form>
+    <div id="resultSet">
+
+    </div>
+</body>
+
+</html>
