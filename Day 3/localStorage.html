@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Local Storage</title>
+    <script>
+        var empData = {"empname":"Akash Shetty", "company":"LTI", "city":"Mumbai"}; 
+        var strData = JSON.stringify(empData);
+        localStorage.setItem("empdata", strData);
+        var newData = localStorage.getItem("empdata");
+        var newObj = JSON.parse(newData);
+        document.getElementById("epname").innerHTML = newObj;
+    </script>
+</head>
+<body>
+    <section id="epname"></section> 
+    <section id="company"></section> 
+    <section id="city"></section>
+
+</body>
+<script>
+    var empData = {"empname":"Akash Shetty", "company":"LTI", "city":"Mumbai"}; 
+    var strData = JSON.stringify(empData);
+    localStorage.setItem("empdata", strData);
+    var newData = localStorage.getItem("empdata");
+    var newObj = JSON.parse(newData);
+    document.getElementById("epname").innerHTML = newObj.empname;
+    document.getElementById("company").innerHTML = newObj.company;
+    document.getElementById("city").innerHTML = newObj.city;
+
+
+</script>
+</html>

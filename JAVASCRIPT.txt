@@ -122,3 +122,65 @@ extension of javascript file should be .js
 to link javascript external file we use <script> tag with its src property
 
 <script src="example.js"></script>
+
+
+
+METHOD
+
+when method is get then form data will get transfered to the server side page(page given in action) by using query string.
+query string always begin with "?" symbol and it contains name-value pair
+
+?name=value (name-value pair seperated by "=")
+
+multiple name value pairs are seperated by &
+
+?name=value&name=value
+
+query string will be visible on URL
+http://127.0.0.1:5501/Day%203/success.html?name=as&employeeCode=as&dept=hr&day=20&month=-1&year=-1
+
+NOT SUGGESTED FOR SENSITIVE INFORMATION
+
+USE METHOD AS POST IN SUCH CASES.
+
+when post is used name value pairs get passed in the request body itself 
+i.e. post hides name value pair from users.
+
+
+
+id is used mostly by javascript
+name is used mostly by server side pages
+
+
+
+
+required field in form needs to be given a required attribute.
+required attribute indicates you need to give value to the text box.
+
+
+
+maxlength defines maximum characters allowed in textbox
+
+
+
+pattern is the attribute to defien regular expression.
+Regular Expressions 
+[A-Z][a-z]
+[0-9]
+
+pattern="[A-Z][a-z]{4,8}" 4 is minimum and 8 is maximum.
+
+
+web storage is similar to cookies
+
+There are 2 types of web storage
+1. Local Storage
+2. Session Storage
+
+
+
+
+JSON.stringify(json_object)
+converts object into equivalent string.
+
+parse method converts json string into json object

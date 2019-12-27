@@ -1,0 +1,23 @@
+{
+    "employees": [{
+            "empname": "Makarand",              
+            "salary": "24000",
+            "empcode": "1001"
+        },
+        {
+            "empname": "Makarand",
+            "salary": "24000",
+            "empcode": "1001"
+        },
+        {
+            "empname": "Makarand",
+            "salary": "24000",
+            "empcode": "1001"
+        },
+        {
+            "empname": "Makarand",
+            "salary": "24000",
+            "empcode": "1001"
+        }
+    ]
+}
